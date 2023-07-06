@@ -47,3 +47,37 @@ if (tipoDeSuscripcion == 'Free') {
 } else if (tipoDeSuscripcion == 'ExpertDuo') {
     console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
 }
+/////////////////2️.Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:
+for (let i = 0; i < 5; i++) {
+    console.log("El valor de i es: " + i);
+}
+for (let i = 10; i >= 2; i--) {
+    console.log("El valor de i es: " + i);
+}
+//RESOLUCION
+while (i < 5) {
+    console.log("El valor de i es: " + i);
+    i++;
+}
+while (i >= 2) {
+    console.log("El valor de i es: " + i);
+    i--;
+}
+////////////////3️.Escribe un código en JavaScript que le pregunte a los usuarios cuánto es 2 + 2. Si responden bien, mostramos un mensaje de felicitaciones, pero si responden mal, volvemos a empezar.
+let respuesta;
+while (respuesta != '4') {
+    let pregunta = prompt('¿Cuánto es 2 + 2?')
+    respuesta = pregunta;
+}
+// 2️.Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento.
+
+    function imprimirPrimerElementoArray(arr) {
+    console.log(arr[1])
+}
+// 4️.Crea una función que pueda recibir cualquier objeto como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el objeto completo).
+function imprimirElementoPorElementoObjeto(obj) {
+    const arr = Object.values(obj);
+    for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i])
+    }
+}
