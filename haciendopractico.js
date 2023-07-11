@@ -74,6 +74,12 @@ while (respuesta != '4') {
     function imprimirPrimerElementoArray(arr) {
     console.log(arr[1])
 }
+// 3️.Crea una función que pueda recibir cualquier array como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el array completo).
+function imprimirElementoPorElemento(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i])
+    }
+
 // 4️.Crea una función que pueda recibir cualquier objeto como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el objeto completo).
 function imprimirElementoPorElementoObjeto(obj) {
     const arr = Object.values(obj);
@@ -81,3 +87,24 @@ function imprimirElementoPorElementoObjeto(obj) {
         console.log(arr[i])
     }
 }
+    // 3️.Replica el comportamiento de tu condicional anterior con if, else y else if, pero ahora solo con if (sin else ni else if).
+// 💡 Bonus: si ya eres una experta o experto en el lenguaje, te desafío a comentar cómo replicar este comportamiento con arrays y un solo condicional. 😏
+let typeSuscripción = [
+"Free",
+"Basic", 
+"Expert", 
+"ExpertDuo"
+];
+let infoSuscripción = [
+"solo puedes tomar los cursos gratis", 
+"puedes tomar casi todos los cursos de Platzi durante un mes", 
+"puedes tomar casi todos los cursos de Platzi durante un año", 
+"tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año"];
+let userSuscription = "ExpertDuo";
+for (let i=0; i < typeSuscripción.length; i++) {
+  if (userSuscription == typeSuscripción[i]) {
+  	console.log(`Si estas suscrito al plan ${typeSuscripción[i]} en el cual ${infoSuscripción[i]}`)
+  }
+}
+
+
